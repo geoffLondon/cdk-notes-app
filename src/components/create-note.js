@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { CREATE_NOTE } from '../graphql/mutation'
 import { useMutation } from '@apollo/client'
 
-const Form = () => {
+const CreateNote = () => {
   const [text, setText] = useState("")
 
   const [createNote, { error }] = useMutation(CREATE_NOTE)
@@ -31,4 +31,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default CreateNote

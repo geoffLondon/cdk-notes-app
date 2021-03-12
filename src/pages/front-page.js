@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import Card from '@material-ui/core/Card'
-import Form from '../components/form'
+import CreateNote from '../components/create-note'
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -16,7 +16,7 @@ const FrontPage = () => {
 
   return (
     <Card className={classes.container}>
-      <Form />
+      <CreateNote />
     </Card>
   )
 }
