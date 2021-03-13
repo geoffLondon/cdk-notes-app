@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useQuery } from '@apollo/client'
-import { GET_NOTES } from '../graphql/query'
+import { LIST_NOTES } from '../graphql/query'
 
-const GetNotes = () => {
-  const { data } = useQuery(GET_NOTES)
+const ListNotes = () => {
+  const { data } = useQuery(LIST_NOTES)
 
   useEffect(() => {
     console.log(data)
@@ -14,4 +14,4 @@ const GetNotes = () => {
   )
 }
 
-export default GetNotes
+export default ListNotes

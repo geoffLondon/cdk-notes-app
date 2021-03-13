@@ -1,9 +1,8 @@
-import gql from '@apollo/client'
+import { gql } from 'apollo-boost'
 
-export const GET_NOTES = gql`
+export const LIST_NOTES = gql`
   query {
-    getAllNotes {
-      id
+    listNotes {
       text
     }
   }

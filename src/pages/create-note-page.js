@@ -7,18 +7,19 @@ const useStyles = makeStyles(theme => ({
   container: {
     background: '#e1eafc',
     padding: theme.spacing(2),
-    height: '43vw',
+    height: '25vw',
   },
 }))
 
-const FrontPage = () => {
+const CreateNotePage = () => {
   const classes = useStyles()
 
   return (
     <Card className={classes.container}>
+      <h1>Create Note Page</h1>
       <CreateNote />
     </Card>
   )
 }
 
-export default FrontPage
+export default CreateNotePage

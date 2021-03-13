@@ -1,11 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import FrontPage from './pages/front-page'
+import ListNotesPage from './pages/list-notes-page'
+import CreateNotePage from './pages/create-note-page'
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route path='/' component={FrontPage}/>
+      <Route path='/list-notes' component={ListNotesPage}/>
+      <Route path='/' component={CreateNotePage}/>
     </Switch>
   </BrowserRouter>
 )
